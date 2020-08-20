@@ -1,36 +1,24 @@
-:root {
-  --font-color: #fff;
-  --primary-color: #111;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  background-color: #0a0d28;
+  color: #d6d9f4;
 }
 
-.navbar {
-  position: fixed;
-  width: 100%;
+h1 {
+  font-family: 'Oswald', sans-serif;
 }
 
-.copyright {
-  background-color: var(--primary-color);
-  color: var(--font-color);
-}
-
-#header,
-#projects,
-#about,
-#contact {
+#warning-container {
+  width: 100vw;
   height: 100vh;
+  display: flex;
 }
 
-#header h1 {
-  font-family: 'Oswald', sans-serif;
-}
-
-#header .header-name {
-  font-family: 'Oswald', sans-serif;
+#warning {
+  width: inherit;
+  align-self: center;
+  text-align: center;
 }
