@@ -397,3 +397,9 @@ footer {
     grid-row-end: 3;
   }
 }
+
+@media screen {
+  .screen-reader-text {
+    display: none;
+  }
+}
