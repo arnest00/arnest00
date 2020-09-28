@@ -6,18 +6,150 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="/assets/css/normalize.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <title>Osmond Arnesto | Washington D.C. Web Developer</title>
+  <title>Osmond Arnesto / Portfolio</title>
 </head>
 
 <body>
-  <section id="warning-container">
-    <div id="warning">
-      <h1>This page is under construction.</h1>
-      <p>Please come back soon!</p>
+<a id="logo" href="#header">
+  <div id="logo-container">
+    OA
+  </div>
+</a>
+
+<div id="menu-container">
+  <div id="close-container" class="hidden menu-button">X</div>
+  <div id="hamburger-container" class="menu-button">
+    <div id="hamburger-top"></div>
+    <div id="hamburger-middle"></div>
+    <div id="hamburger-bottom"></div>
+  </div>
+</div>
+
+<div id="content-container">
+
+  <nav id="nav">
+    <div id="nav-links-container" class="hidden">
+      <ul id="nav-links">
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main> <!-- START MAIN -->
+
+  <section id="header">
+    <h1>Hi, I'm <span>Osmond.</span></h1>
+    <p>I'm a web developer based in the Washington, D.C. Metro area.</p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div id="projects-container">
+      <div class="project">
+        <div class="project-description">
+          <h3>selfLESS</h3>
+          <!-- <h4>Mock landing page</h4> -->
+          <div class="project-links-container">
+            <a class="project-link" href="https://github.com/arnest00/landing-page" target="_blank">View GitHub</a>
+            <span>/</span>
+            <a class="project-link" href="https://selfless.netlify.app/" target="_blank">View Demo</a>
+          </div>
+        </div>
+
+        <div class="project-image-container">
+          <img class="project-image" src="/assets/images/showcase-landing-page.png" alt="mock landing page screenshot">
+        </div>
+
+        <div class="project-summary">
+          <p>
+            This project started as a clone of the Airbnb landing page. While I was building it, I began to imagine what an extreme endpoint of the gig economy would look like. So I pivoted. The goal of the page now is to attract what selfLESS calls Providers, a gig worker who rents out their time.
+          </p>
+          <p>
+            Featured on the page is a clickable icon that switches between a light theme and a dark theme for those graveyard shift Providers. There is also a calculator that calculates earnings given type of labor and length of rental.
+          </p>
+          <!-- <p class="project-summary-viewer">
+            View More <ion-icon class="project-summary-viewer-button" name="chevron-down-sharp"></ion-icon>
+          </p> -->
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-description">
+          <h3>Kimbap Super</h3>
+          <!-- <h4>Mock restaurant website</h4> -->
+          <div class="project-links-container">
+            <a class="project-link" href="https://github.com/arnest00/responsive-website" target="_blank">View GitHub</a>
+            <span>/</span>
+            <a class="project-link" href="https://kimbap-super.netlify.app/" target="_blank">View Demo</a>
+          </div>
+        </div>
+
+        <div class="project-image-container">
+          <img class="project-image" src="/assets/images/showcase-restaurant.png" alt="mock restaurant website screenshot">
+        </div>
+
+        <div class="project-summary">
+          <p>
+            I wanted to learn what went into making a website reponsive, so I built a one-page webpage for a fictional Korean restaurant. The goal of the page is to provide all the relevant information a restaurant guest might need.
+          </p>
+          <p>
+            The page features the most eye-catching images I could source from Unsplash, a menu rendered with the help of a JS script, and contact information. The parallax effect is disabled on mobile.
+          </p>
+          <!-- <p class="project-summary-viewer">
+            View More <ion-icon class="project-summary-viewer-button" name="chevron-down-sharp"></ion-icon>
+          </p> -->
+        </div>
+      </div>
     </div>
   </section>
 
+  <section id="about">
+    <h2 class="section-title">About</h2>
+    <div>
+      <p>
+        My first experience with programming was a game called <cite>RPG Maker 2</cite> for the Playstation 2. Working in the game was a clunky, frustrating, and time-consuming process; it involved navigating endless menus because a gamepad is not a keyboard. But I stuck with it - learning how to create scripts; work with variables and conditions; and design visual effects - and the results were not that impressive. But it was an extremely rewarding feeling when everything worked the way I wanted it to.
+      </p>
+      <p>
+        It's this feeling of creating something functional that made me decide to pivot into development. I began my career path as an ESL teacher in South Korea, before working professionally as a writer back in the U.S. Since delving into web development, I have gained proficiency in HTML, CSS, and JS, plus a familiarity with back-end technologies like NodeJS. Now, as a self-taught developer, I am looking for opportunities to apply my skills and creativity to solve technical problems in the real world.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-links-container">
+      <a class="contact-link" href="mailto:osmondarnesto@gmail.com">
+        osmondarnesto@gmail.com
+      </a>
+
+      <div class="contact-logos-container">
+        <a class="contact-link contact-logo" href="https://github.com/arnest00" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+
+        <a class="contact-link contact-logo" href="https://www.linkedin.com/in/osmondarnesto/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main> <!-- END MAIN -->
+
+  <footer id="copyright">
+    <p>&copy; Osmond Arnesto 2020</p>
+  </footer>
+
+</div>
+  
   <script src="/assets/js/script.js" async defer></script>
 </body>
 </html>
