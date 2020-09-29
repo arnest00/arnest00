@@ -30,6 +30,7 @@ main {
 }
 
 p {
+  background-color: var(--background-color);
   margin: 1rem 0;
 }
 
@@ -230,6 +231,7 @@ footer {
 
 #header h1, 
 #header h1 span {
+  background-color: var(--background-color);
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
 }
@@ -309,6 +311,7 @@ footer {
   }
 
   .contact-link {
+    background-color: var(--background-color);
     margin: 2rem 0 2rem 0;
   }
 
