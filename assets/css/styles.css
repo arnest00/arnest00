@@ -108,17 +108,21 @@ footer {
   margin-top: 1rem;
 }
 
-.project-summary-viewer {
-  display: inline;
+.project-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.project-summary-viewer:hover {
-  cursor: pointer;
+.project-techs {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.project-summary-viewer-button {
-  position: relative;
-  top: 0.25rem;
+.project-techs div {
+  font-size: 0.8rem;
+  margin-right: 2rem;
+  text-transform: uppercase;
 }
 
 .contact-links-container {
