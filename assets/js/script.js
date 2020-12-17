@@ -1,7 +1,7 @@
 const menuBtns = document.querySelectorAll('.menu-button');
 const logoBtn = document.querySelector('#logo');
 const navLinksContainer = document.querySelector('#nav-links-container');
-const navLinks = document.querySelectorAll('.nav-link');
+const navLinks = document.querySelectorAll('.to-section');
 
 menuBtns.forEach(button => {
   button.addEventListener('click', e => {
