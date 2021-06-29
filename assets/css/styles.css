@@ -1,6 +1,5 @@
 :root {
-  --font-body-stack: 'Open Sans', sans-serif;
-  --font-header-stack: 'Oswald', sans-serif;
+  --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --background-color: #111;
   --background-light: #2b2b2b;
   --background-lighter: #383838;
@@ -21,22 +20,17 @@
 }
 
 html {
-  font-family: var(--font-body-stack);
+  font-family: var(--font-stack);
   background-color: var(--background-color);
   color: var(--font-color);
 }
 
-main {
-  flex: 1 0 auto;
-}
-
 p {
-  margin: 1rem 0;
+  line-height: 1.75;
 }
 
 footer {
-  flex-shrink: 0;
-  height: 3rem;
+  height: 2.81rem;
 }
 
 .hidden {
@@ -47,7 +41,7 @@ footer {
   color: var(--font-color);
   text-decoration: none;
   display: block;
-  padding: 1rem;
+  padding: 1.06rem;
   text-align: center;
 }
 
@@ -63,6 +57,35 @@ footer {
 
 .nav-link:hover:after {
   transform: scaleX(1);
+}
+
+.header-description {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-description h1, 
+.header-description h1 span {
+  font-size: 3rem;
+}
+
+.header-description h1 {
+  margin: 0.5rem;
+}
+
+.header-description h1 span {
+  text-shadow: 10px -15px 0px var(--palette-main),
+    20px -30px 0px var(--palette-secondary),
+    30px -45px 0px var(--palette-tertiary);
+}
+
+.header-description p {
+  font-size: 1.25rem;
+  width: 90%;
 }
 
 .header-logos-container {
@@ -87,7 +110,6 @@ footer {
 }
 
 .section-title {
-  font-family: var(--font-header-stack);
   font-size: 4rem;
   color: var(--palette-main);
   margin: 2rem 0 1.5rem 0;
@@ -100,7 +122,6 @@ footer {
 }
 
 .project-description {
-  font-family: var(--font-header-stack);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,29 +168,30 @@ footer {
   text-transform: uppercase;
 }
 
-#content-container {
+.transparent {
+  opacity: 0;
+}
+
+#main {
   display: flex;
   flex-direction: column;
 }
 
-#logo {
-  color: var(--font-color);
-  text-decoration: none;
+#scroll-to-top {
+  cursor: pointer;
   position: fixed;
-  bottom: 3rem;
-  left: 1.5rem;
-  z-index: 3;
-  line-height: 1;
-  font-weight: 700;
-}
-
-#logo-container {
-  background-color: var(--palette-main);
+  bottom: 2.81rem;
+  left: 1.75rem;
+  height: 2.63rem;
+  width: 2.63rem;
   border-radius: 0.25rem;
+  padding: 0.69rem;
+  background-color: var(--palette-main);
+  color: var(--font-color);
+  z-index: 3;
   text-align: center;
-  padding: 0.6rem;
-  width: 2.4rem;
-  height: 2.4rem;
+  font-weight: 700;
+  transition: all 125ms;
 }
 
 #hamburger-container {
@@ -178,6 +200,7 @@ footer {
   top: 1rem;
   right: 1.5rem;
   z-index: 3;
+  transition: all 125ms;
 }
 
 #close-container {
@@ -189,6 +212,7 @@ footer {
   z-index: 3;
   text-align: center;
   transform: scale(2, 1.5);
+  transition: all 125ms;
 }
 
 #hamburger-top,
@@ -196,17 +220,23 @@ footer {
 #hamburger-bottom {
   display: block;
   content: '';
-  border-bottom: solid 0.125rem var(--font-color);
+  border-bottom: solid 2px var(--font-color);
   border-radius: 1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.44rem;
+}
+
+#header {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #nav {
-  background-color: var(--background-color);
-  width: 100%;
-  flex-shrink: 0;
   position: fixed;
-  z-index: 2
+  background-color: var(--background-color);
+  width: 100vw;
+  z-index: 2;
 }
 
 #nav-links {
@@ -214,36 +244,6 @@ footer {
   display: flex;
   flex-direction: column;
   margin-top: 2.15rem;
-}
-
-#header {
-  height: 100vh;
-}
-
-#header {
-  align-items: center;
-  text-align: center;
-}
-
-#header h1, 
-#header h1 span {
-  font-family: var(--font-header-stack);
-  font-size: 3rem;
-}
-
-#header h1 {
-  margin: 0.5rem;
-}
-
-#header p {
-  font-size: 1.25rem;
-  width: 90%;
-}
-
-#header h1 span {
-  text-shadow: 10px -15px 0px var(--palette-main),
-    20px -30px 0px var(--palette-secondary),
-    30px -45px 0px var(--palette-tertiary);
 }
 
 #projects {
@@ -283,10 +283,6 @@ footer {
 
 /* ============ Rendering at 768px and up */
 @media (min-width: 768px) {
-  p {
-    margin: 0.5rem 0;
-  }
-
   .nav-link {
     display: block;
     padding: 0;
@@ -306,7 +302,7 @@ footer {
     box-shadow: 0 0 0.25rem var(--background-color);
   }
 
-  #logo {
+  #scroll-to-top {
     display: none;
   }
 
