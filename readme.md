@@ -1,2 +1,1 @@
-# Osmond Arnesto's Portfolio
-
+# Portfolio
