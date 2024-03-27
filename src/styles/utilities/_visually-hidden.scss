@@ -1,0 +1,5 @@
+.util-visually-hidden:not(:focus) {
+  position: absolute;
+  top: -100%;
+  left: 0;
+}

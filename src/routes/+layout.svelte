@@ -1,21 +1,15 @@
 <script>
-  import './styles.scss'
+  import '$styles/styles.scss';
 </script>
 
-<div>
-  <main>
+<div class="obj-layout">
+  <main id="main">
     <slot />
   </main>
 </div>
 
-<style lang="scss">
-    main {
-      width: 75vw;
-      height: 100vh;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-transform: lowercase;
-    }
+<style>
+  main {
+    flex-grow: 1;
+  }
 </style>

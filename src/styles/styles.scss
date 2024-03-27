@@ -1,0 +1,24 @@
+// 1. Generic - CSS resets
+// 2. Elements - Bare HTML elements
+// 3. Objects - Undecorated design patterns
+// 4. Utilities - Overrides and helper classes
+
+// ====================================================================
+// 1. Generic
+@import './generic/reset';
+
+// ====================================================================
+// 2. Elements
+@import './elements/a';
+@import './elements/body';
+@import './elements/headings';
+@import './elements/root';
+@import './elements/p';
+
+// ====================================================================
+// 3. Objects
+@import './objects/layout';
+
+// ====================================================================
+// 4. Utilities
+@import './utilities/visually-hidden';

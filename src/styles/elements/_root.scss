@@ -1,15 +1,9 @@
 :root {
   --font-stack: ui-monospace, "Menlo", "Monaco", "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro","Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-  --background-color: #111;
-  --font-color: #eee;
+  --background-color: #0F0E10;
+  --font-color: #f5f5f4;
   --link-color: #e3b505;
   --link-visited-color: #11c511;
-}
-
-html {
-  font-family: var(--font-stack);
-  background-color: var(--background-color);
-  color: var(--font-color);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --tertiary-color: #ba5a9a;
+  font-size: calc(1rem + 0.2vw);
 }

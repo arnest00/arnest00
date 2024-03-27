@@ -1,39 +1,40 @@
 <svelte:head>
-	<title>Osmond Arnesto</title>
+	<title>Osmond Arnesto - Web Developer</title>
 </svelte:head>
 
-<h1>Closed for renovations</h1>
-
-<p>Need to contact me in the meantime?</p>
-
-<ul>
-  <li>
-    <a
-      href="https://www.linkedin.com/in/osmondarnesto/"
-      rel="noopener noreferrer">
-      Visit my LinkedIn
-    </a>
-  </li>
-  <li>
-    <a 
-      href="https://github.com/arnest00"
-      rel="noopener noreferrer">
-      Check out my GitHub
-    </a>
-  </li>
-</ul>
+<section>
+  <h1 class="util-visually-hidden">
+    Osmond Arnesto - Web Developer
+  </h1>
+  <h2>
+    Closed for renovations
+  </h2>
+  <p>
+    Need to contact me in the meantime?
+  </p>
+  <ul>
+    <li>
+      <a
+        href="https://www.linkedin.com/in/osmondarnesto/"
+        rel="noopener noreferrer">
+        Visit my LinkedIn
+      </a>
+    </li>
+    <li>
+      <a 
+        href="https://github.com/arnest00"
+        rel="noopener noreferrer">
+        Check out my GitHub
+      </a>
+    </li>
+  </ul>
+</section>
 
 <style lang="scss">
-  a {
-    text-decoration: none;
-    color: var(--link-color);
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    &:visited { 
-      color: var(--link-visited-color);
-    }
+  section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 </style>
