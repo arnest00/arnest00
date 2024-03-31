@@ -1,12 +1,8 @@
 a {
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--color-link);
 
   &:hover {
     text-decoration: underline;
-  }
-
-  &:visited { 
-    color: var(--link-color);
   }
 }

@@ -1,15 +1,13 @@
 <script>
+  import Footer from '$components/Footer.svelte';
+  import Header from '$components/Header.svelte';
   import '$styles/styles.scss';
 </script>
 
 <div class="obj-layout">
-  <main id="main">
+  <Header />
+  <main id="main" class="obj-layout__main-content">
     <slot />
   </main>
+  <Footer />
 </div>
-
-<style>
-  main {
-    flex-grow: 1;
-  }
-</style>

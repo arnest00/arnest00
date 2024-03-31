@@ -1,8 +1,19 @@
 .obj-layout {
-  width: 75vw;
-  height: 100%;
+  width: min(75vw, 45rem);
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 6rem;
+
+  &__main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  & section :last-child {
+    margin-bottom: 0;
+  }
 }

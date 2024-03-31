@@ -5,20 +5,22 @@
 
 // ====================================================================
 // 1. Generic
-@import './generic/reset';
+@import "./generic/reset";
 
 // ====================================================================
 // 2. Elements
-@import './elements/a';
-@import './elements/body';
-@import './elements/headings';
-@import './elements/root';
-@import './elements/p';
+@import "./elements/a";
+@import "./elements/body";
+@import "./elements/headings";
+@import "./elements/root";
+@import "./elements/p";
 
 // ====================================================================
 // 3. Objects
-@import './objects/layout';
+@import "./objects/flex";
+@import "./objects/layout";
 
 // ====================================================================
 // 4. Utilities
-@import './utilities/visually-hidden';
+@import "./utilities/text-align";
+@import "./utilities/visually-hidden";

@@ -1,0 +1,8 @@
+.obj-flex {
+  display: flex;
+  gap: 2rem;
+
+  &--column {
+    flex-direction: column;
+  }
+}

@@ -1,9 +1,25 @@
 :root {
-  --font-stack: ui-monospace, "Menlo", "Monaco", "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro","Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-  --background-color: #0F0E10;
-  --font-color: #f5f5f4;
-  --link-color: #e3b505;
-  --link-visited-color: #11c511;
-  --tertiary-color: #ba5a9a;
-  font-size: calc(1rem + 0.2vw);
+  // Typography
+  --serif: "Bitter", "Iowan Old Style", "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times", "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbolserif";
+  --sans-serif: "Chivo", system-ui, "Avenir Next", "Avenir", "Segoe UI", "Helvetica Neue", "Helvetica", "Ubuntu", "Roboto", "Noto", "Arial", sans-serif;
+  --monospace: ui-monospace, "Menlo", "Monaco", "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro","Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  //  Primitives
+  --neutral-100: #1f1f1f;
+  --neutral-900: #fcfcfc;
+  --gold-600: #d6c94c;
+  --scale-600: #71ca5a;
+
+  // Tokens
+  --color-border: var(--neutral-900);
+  --color-link: var(--scale-600);
+  --color-surface: var(--neutral-100);
+  --color-text: var(--neutral-900);
+  --font-size-sm: clamp(0.875rem, 0.875rem + 0.2vw, 1rem);
+  --font-size-md: clamp(1rem, 1rem + 0.2vw, 1.25rem);
+  --font-size-lg: clamp(1.5rem, 1.5rem + 0.2vw, 2rem);
+  --font-size-xl: clamp(2rem, 2rem + 0.2vw, 2.5rem);
+  --font-size-2xl: clamp(2.5rem, 2.5rem + 0.2vw, 3rem);
+  --font-size-3xl: clamp(3rem, 3rem + 0.2vw, 3.5rem);
+  --font-weight-semibold: 600;
 }
