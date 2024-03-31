@@ -1,36 +1,50 @@
+<script>
+  import Sprite from "$components/Sprite.svelte";
+</script>
+
 <ul class="cmp-social-links">
   <li>
-    <a 
+    <a
+      class="cmp-social-links__link"
       href="https://github.com/arnest00"
-      rel="noopener noreferrer"
-      aria-label="Osmond's GitHub profile">
-      <img
-        class="cmp-social-links__logo"
-        src="/images/github-logo.png"
-        alt=""/>
+      rel="noopener noreferrer">
+      <Sprite
+        src="/images/github-logo-spritesheet.png"
+        size={192}
+        animated
+        frames={18}
+        frameRate={100}/>
+      <span>Check out my GitHub</span>
     </a>
   </li>
   <li>
     <a
-    href="https://www.linkedin.com/in/osmondarnesto/"
-    rel="noopener noreferrer"
-    aria-label="Osmond's LinkedIn profile">
-    <img
-      class="cmp-social-links__logo"
-      src="/images/linkedin-logo.png"
-      alt=""/>
-  </a>
+      class="cmp-social-links__link"
+      href="https://www.linkedin.com/in/osmondarnesto/"
+      rel="noopener noreferrer">
+      <Sprite
+        src="/images/linkedin-logo-spritesheet.png"
+        size={192}
+        animated
+        frames={18}
+        frameRate={100}/>
+      <span>Connect with me on LinkedIn</span>
+    </a>
   </li>
 </ul>
 
 <style lang="scss">
   .cmp-social-links {
-    display: flex;
+    &__link {
+      width: fit-content;
+      color: var(--color-accent);
+      display: flex;
+      flex-direction: column;
 
-    &__logo {
-      width: 120px;
-      height: 120px;
-      image-rendering: pixelated;
+      @media (min-width: 45rem) {
+        flex-direction: row;
+        align-items: center;
+      }
     }
   }
 </style>
