@@ -27,7 +27,7 @@
     frameRate={150}/>
   
   <p>
-    Hi, I'm <span class="util-text-color--accent">Osmond</span>. I currently work with <a href="https://sparkbox.com/">Sparkbox</a>. While my job title is "web developer," it's a toss-up whether I am solving a development problem in Visual Studio Code or finding a design solution in Figma during my workday.
+    Hi, I'm <span class="util-text-color--accent">Osmond</span> and I'm a developer at <a href="https://sparkbox.com/">Sparkbox</a>. I love building for the web, whether this means solving a development problem, finding a design solution, or contributing to a design system.
   </p>
 
   <p>

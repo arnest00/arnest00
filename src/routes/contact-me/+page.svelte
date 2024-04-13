@@ -12,7 +12,7 @@
   </h1>
 
   <p>
-    I can be found at the links below; feel free to send me a message on LinkedIn if you'd like to connect, or create an issue on one of my repos on GitHub if you find one. I also have <a href="https://codepen.io/arnest00" rel="noopener noreferrer">a CodePen profile</a> where I occasionally play around with new Pens.
+    I can be found at the usual developer spaces. I also have <a href="https://codepen.io/arnest00" rel="noopener noreferrer">a CodePen profile</a> where I occasionally play around with new Pens.
   </p>
 
   <p>
