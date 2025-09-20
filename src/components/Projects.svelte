@@ -1,7 +1,6 @@
 <script>
   import Project from "$components/Project.svelte";
-  export let featured = false;
-  export let projects = [];
+  let { featured = false, projects = [] } = $props();
 
   const filteredProjects = featured
     ? projects.filter((project) => project.isFeatured)

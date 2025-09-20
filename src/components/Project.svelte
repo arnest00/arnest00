@@ -1,10 +1,12 @@
 <script>
-  export let featured;
-  export let name;
-  export let type;
-  export let description;
-  export let link;
-  export let relatedLinks = [];
+  let {
+    featured,
+    name,
+    type,
+    description,
+    link,
+    relatedLinks = []
+  } = $props();
 </script>
 
 <li class="cmp-project" data-project-type={type} data-featured={featured}>
