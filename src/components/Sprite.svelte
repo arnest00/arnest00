@@ -1,9 +1,11 @@
 <script>
-  export let src;
-  export let size;
-  export let animated = false;
-  export let frames = 1;
-  export let frameRate = 100;
+  let {
+    src,
+    size,
+    animated = false,
+    frames = 1,
+    frameRate = 100
+  } = $props();
 
   const inlineStyles = animated
   ? `
@@ -37,8 +39,7 @@
       image-rendering: pixelated;
   
       &--animated {
-        &:hover,
-        .cmp-social-links__link:hover .cmp-sprite & {
+        &:hover {
           animation: animate-sprite var(--animation-duration) steps(var(--animation-steps));
         }
       }
